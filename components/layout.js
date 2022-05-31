@@ -9,7 +9,7 @@ export default function Layout({ children }) {
                     <link rel="icon" href="/favicon.ico" />
                     <meta name="viewport" content="initial-scale=1, width=device-width" />
                 </Head>
-                <header className="text-center text-white bg-gray-700">
+                <header className="text-center text-white bg-gray-600">
                     <h1 className="text-3xl py-4">NFT Ticket System</h1>
                 </header>
                 <main className="mx-[10%]">
