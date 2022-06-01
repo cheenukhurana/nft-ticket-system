@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Layout({ children }) {
     return (
@@ -9,8 +10,9 @@ export default function Layout({ children }) {
                     <link rel="icon" href="/favicon.ico" />
                     <meta name="viewport" content="initial-scale=1, width=device-width" />
                 </Head>
-                <header className="text-center text-white bg-gray-600">
-                    <h1 className="text-3xl py-4">NFT Ticket System</h1>
+                <header className="text-white bg-gray-600 py-4 text-3xl text-center">
+                    NFT Ticket System
+                    <p className="text-base inline-block float-right p-2"><Link href="/list-your-show"><a>List your show</a></Link></p>
                 </header>
                 <main className="mx-[10%]">
                     {children}
