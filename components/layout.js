@@ -12,7 +12,10 @@ export default function Layout({ children }) {
                 </Head>
                 <header className="text-white bg-gray-600 py-4 text-3xl text-center">
                     NFT Ticket System
-                    <p className="text-base inline-block float-right p-2"><Link href="/list-your-show"><a>List your show</a></Link></p>
+                    <div className="text-base inline-block float-right p-2 flex">
+                        <p><Link href="/list-your-show"><a>List your show</a></Link></p>
+                        <p className="pl-4">Connect Wallet</p>
+                    </div>
                 </header>
                 <main className="mx-[10%]">
                     {children}
